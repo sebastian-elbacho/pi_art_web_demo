@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Pi Art – Urban Show & Fire Show {% endblock %}</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Pi Art – oficjalna strona grupy artystycznej. Urban show, fire show, art design i kreatywne projekty." />
+  <meta name="author" content="Pi Art" />
+
+  <!-- Open Graph (social media preview) -->
+  <meta property="og:title" content="Pi Art – Urban Show & Fire Show" />
+  <meta property="og:description" content="Oficjalna strona grupy Pi Art. Performance, design i artystyczne widowiska." />
+  <meta property="og:image" content="" />.    <!--PAMIETAC O TYM MIEJSCU-->
+  <meta property="og:url" content="" />.      <!--pAMIETAC O TYM MIEJSCU-->
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts (Roboto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Twój własny CSS (umieszczony w static/) -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+   <div class="container">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('fireshow') }}">Fireshow</a></li>
+        <li><a href="{{ url_for('lightshow') }}">Lightshow</a></li>
+        <li><a href="{{ url_for('lasershow') }}">Laser Show</a></li>
+        <li><a href="{{ url_for('ilusionist') }}">Ilusionist Show</a></li>
+        <li><a href="{{ url_for('aerial') }}">Aerial Shows</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+    
+</body>
+</html>
