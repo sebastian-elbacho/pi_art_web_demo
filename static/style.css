@@ -1,3 +1,57 @@
-body {
-    background-color: rgb(28, 28, 35);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: black;
+}
+
+
+
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
+
+
+header {
+    
+    background-image: url("./images/fireOne.jpg");
+     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+
+}
+
+
+
+
+
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    
+}
+
+li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+}
+
+li {
+    list-style: none;
+    
 }

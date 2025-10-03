@@ -12,8 +12,8 @@
   <!-- Open Graph (social media preview) -->
   <meta property="og:title" content="Pi Art – Urban Show & Fire Show" />
   <meta property="og:description" content="Oficjalna strona grupy Pi Art. Performance, design i artystyczne widowiska." />
-  <meta property="og:image" content="" />.    <!--PAMIETAC O TYM MIEJSCU-->
-  <meta property="og:url" content="" />.      <!--pAMIETAC O TYM MIEJSCU-->
+  <meta property="og:image" content="" />    <!--PAMIETAC O TYM MIEJSCU-->
+  <meta property="og:url" content="" />      <!--pAMIETAC O TYM MIEJSCU-->
   <meta property="og:type" content="website" />
 
   <!-- Google Fonts (Roboto) -->
@@ -24,10 +24,12 @@
   <!-- własny CSS (umieszczony w static/) -->
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-<body>
-   <div class="container">
+
+  <div class="container">
   <header>
     <nav>
+      
+
       <ul>
         <li><a href="{{ url_for('home') }}">Home</a></li>
         <li><a href="{{ url_for('fireshow') }}">Fire</a></li>
@@ -39,7 +41,8 @@
       </ul>
     </nav>
   </header>
-</div>
+     
+
 
 <main>
   {% block content %}
@@ -48,6 +51,8 @@
   {% endblock%}
 </main>
 
-    
+
+
+</div>  
 </body>
 </html>
