@@ -9,17 +9,17 @@ def home():
 
 
 
-@app.route('/fireshow')
+@app.route('/fire')
 def fireshow():
-    return render_template('fireshow.html')
+    return render_template('fire.html')
 
 @app.route('/lightshow')
 def lightshow():
-    return render_template('lightshow.html')
+    return render_template('light.html')
 
 @app.route('/lasershow')
 def lasershow():
-    return render_template('lasershow.html')
+    return render_template('laser.html')
 
 @app.route('/ilusionist')
 def ilusionist():
