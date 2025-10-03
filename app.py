@@ -5,6 +5,9 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     return render_template("index.html")
+ 
+
+
 
 @app.route('/fireshow')
 def fireshow():
@@ -26,6 +29,10 @@ def ilusionist():
 def aerial():
     return render_template('aerial.html')
 
+
+@app.route('/inne') 
+def inne():
+    return render_template('inne.html')
 
 
 
