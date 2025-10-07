@@ -97,6 +97,26 @@ h1 {
 
 
 
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+
+}
+
+.hero-title {
+  position: absolute;
+  z-index: 2;                     /* na samym wierzchu */
+  color: white;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
 
 
 
@@ -121,6 +141,8 @@ h1 {
 <body>
 <div class="container">
  <header class="hero">
+ <div class="overlay"></div>
+ <h1 class="hero-title">Pi Art</h1>
   <img src="./images/fireOne.jpg" alt="" class="zdj">
   <img src="./images/Eko.jpg" alt="" class="zdj">
   <img src="./images/fireOne.jpg" alt="" class="zdj">
